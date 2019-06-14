@@ -33,17 +33,17 @@ class Signup extends Component {
 
             <div className="input-field">
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={this.handleChange}/>
+            <input type="text" id="password" onChange={this.handleChange}/>
         </div>
 
             <div className="input-field">
             <label htmlFor="firstName">First Name</label>
-            <input type="firstName" id="firstName" onChange={this.handleChange}/>
+            <input type="text" id="firstName" onChange={this.handleChange}/>
         </div>
 
             <div className="input-field">
             <label htmlFor="lastName">Last Name</label>
-            <input type="lastName" id="lastName" onChange={this.handleChange}/>
+            <input type="text" id="lastName" onChange={this.handleChange}/>
         </div>
             <div className="input-field">
                 <button className="btn">Submit</button>

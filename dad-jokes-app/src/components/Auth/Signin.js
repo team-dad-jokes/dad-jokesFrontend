@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Signin.css';
-
+import axios from 'axios';
 
 
 class Signin extends Component {
@@ -15,8 +15,16 @@ class Signin extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
-    }
+        const endpoint = 'http://localhost:5000/api/auth/signin';
+        axios.post(endpoint, this.state).then(res =>{
+            console.log('RESPONSE', res);
+        })
+        .catch(error => {
+            console.log('ERROR', error);
+        });
+    };
+
+
   render() {
     return (
       <div className="container"> 
