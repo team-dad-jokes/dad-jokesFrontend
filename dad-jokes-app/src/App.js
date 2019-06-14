@@ -6,7 +6,8 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import SignIn from './components/Auth/Signin';
 import SignUp from './components/Auth/SignUp';
-
+import JokeList from './components/JokeList';
+import axios from 'axios'; 
 
 class App extends Component {
     state = {
@@ -42,6 +43,7 @@ class App extends Component {
           </main>
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/signup" component={SignUp} />
+          
        </div>
        </BrowserRouter>
     );
