@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+}
+
+.signin-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    color: #080944;
+}
+
+.input-field input {
+    padding: 0 ;
+    margin: 0.5rem;
+    color: #080944;
+    font-weight: 600;
+}
+
+.input-field {
+    padding: 0 ;
+    margin: 1rem;
+    color: #080944;
+    font-weight: 600;
+}
+
+.btn {
+    background: #080944;
+    color: goldenrod;
+    font-weight: 700;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.9rem;
+}
